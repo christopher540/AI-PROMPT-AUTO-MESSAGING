@@ -55,7 +55,7 @@ def show_opt():
 
 
 def send_msg():
-    py.sendwhatmsg_instantly(phone_no=st.session_state.phone_no, message=st.session_state.final,tab_close=True)
+    py.sendwhatmsg_instantly(phone_no=st.session_state.phone_no, message=st.session_state.final,tab_close=False)
     # pyautogui.press('enter')
     for key in st.session_state.keys():
         del st.session_state[key]

@@ -1,11 +1,11 @@
 from groq import Groq
 import pytesseract
 from PIL import Image
-
+import os
 
 def get_options(path,user_input):
     client = Groq(
-            api_key='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'
+            api_key=os.environ.get("KEYS")
         )
 
     #profile=input('Enter profile path: ')
